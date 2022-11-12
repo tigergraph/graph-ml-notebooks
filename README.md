@@ -73,7 +73,7 @@ We recommend starting with the tutorials in the `basics` folders if you are new 
 
 | folder | notebook  | intro |
 | :--- | :--- | :--- |
-| basics | [0_datasets.ipynb](./basics/0_datasets.ipynb)  | Load Data into TigerGraph |
+| basics | [datasets.ipynb](./basics/datasets.ipynb)  | Load Data into TigerGraph |
 | basics | [feature_engineering.ipynb](./basics/feature_engineering.ipynb)  | Util functions about building graph features from TigerGraph |
 | basics | [pyTigergraph_101.ipynb](./basics/pyTigergraph_101.ipynb)  | Basic pyTigerGraph examples|
 | basics | [gsql_101.ipynb](./basics/gsql_101.ipynb)  | Basic GSQL 101 using pyTigerGraph |
