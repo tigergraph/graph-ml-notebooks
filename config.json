@@ -1,0 +1,6 @@
+{
+    "host": "https://test.i.tgcloud-dev.com",
+    "username": "user_1",
+    "password": "MyPassword1!",
+    "getToken": true 
+}

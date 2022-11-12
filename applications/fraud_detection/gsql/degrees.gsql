@@ -1,0 +1,18 @@
+CREATE QUERY degrees(STRING in_degree="in_degree", STRING out_degree="out_degree") SYNTAX V1 {
+    SumAccum<INT> @in_degree;
+    SumAccum<INT> @out_degree;
+  
+    res1 = 
+        SELECT p 
+        FROM ANY:p - (Transaction:e) - :q
+        ACCUM p.@out_degree += 1, q.@in_degree += 1;
+       
+    res2 = 
+        SELECT p 
+        FROM ANY:p
+        POST-ACCUM 
+            p.setAttr(in_degree, p.@in_degree),
+            p.setAttr(out_degree, p.@out_degree);
+             
+    PRINT "Degrees computed Successfully" as Status; 
+}

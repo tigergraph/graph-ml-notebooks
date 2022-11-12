@@ -1,0 +1,8 @@
+**/ldbc_snb_data
+.ipynb_checkpoints
+*.tar.gz
+tmp.ipynb
+.ipynb_checkpoints
+**/tmp
+**/__pycache__
+.DS_Store

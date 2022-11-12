@@ -1,0 +1,8 @@
+CREATE QUERY downsample() FOR GRAPH Ethereum SYNTAX V2 {
+  
+  S = {Account.*};
+
+  DELETE s FROM S:s
+    WHERE s.is_fraud == FALSE AND s.recv_amount == 0 AND s.send_amount == 0;
+  PRINT "Success!";
+}

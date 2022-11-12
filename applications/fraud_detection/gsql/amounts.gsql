@@ -1,0 +1,25 @@
+CREATE QUERY amounts(STRING send_min="send_min", STRING send_amount="send_amount", STRING recv_min = "recv_min", STRING recv_amount = "recv_amount") SYNTAX V1 { 
+    MinAccum<FLOAT> @send_min;
+    SumAccum<FLOAT> @send_amount;
+    MinAccum<FLOAT> @recv_min;
+    SumAccum<FLOAT> @recv_amount;
+  
+    res = 
+        SELECT p 
+        FROM ANY:p -(Transaction:e)- :q
+        ACCUM p.@send_min += e.amount, q.@recv_min += e.amount,
+              p.@send_amount += e.amount, q.@recv_amount += e.amount;
+  
+    res = 
+        SELECT p 
+        FROM ANY:p
+        POST-ACCUM 
+            p.setAttr(recv_min, p.@recv_min),
+            p.setAttr(recv_amount, p.@recv_amount),
+            p.setAttr(send_min, p.@send_min),
+            p.setAttr(send_amount, p.@send_amount),
+            IF (p.in_degree == 0) THEN p.setAttr(recv_min, 0) END,
+            IF (p.out_degree == 0) THEN p.setAttr(send_min, 0) END;
+         
+    PRINT "Amounts computed successfully" as Status;
+}
