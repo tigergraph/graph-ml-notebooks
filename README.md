@@ -16,7 +16,6 @@ Create a TigerGraph Database Cluster with Graph Machine Learning Workbench that 
 To access the graph database through pyTigerGraph, we need to create a database username and password, then put these credentials in config.json.
 
 - Go back to your browser tab/window for TigerGraph Cloud.
-- Click on the `Cluster -> Access Management` page. 
 - Click on `Cluster` on the left side menu. For the cluster containing this workbench, click `Access Management`.
 - Create a database user and grant appropriate permissions (e.g., `globaldesigner`). More details about managing database users can be found here: https://docs.tigergraph.com/cloud/security/manage-db-users. More details about access control settings can be found here:  https://docs.tigergraph.com/tigergraph-server/current/user-access/access-control-model#_built_in_roles.
 
