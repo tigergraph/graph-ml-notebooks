@@ -15,9 +15,9 @@ Create a TigerGraph Database Cluster with Graph Machine Learning Workbench that 
 
 To access the graph database through pyTigerGraph, we need to create a database username and password, then put these credentials in config.json.
 
-- Go back to your browser tab/window for TigerGraph Cloud.
-- Click on `Cluster` on the left side menu. For the cluster containing this workbench, click `Access Management`.
-- Create a database user and grant appropriate permissions (e.g., `globaldesigner`). More details about managing database users can be found here: https://docs.tigergraph.com/cloud/security/manage-db-users. More details about access control settings can be found here:  https://docs.tigergraph.com/tigergraph-server/current/user-access/access-control-model#_built_in_roles.
+1. Go back to your browser tab/window for TigerGraph Cloud.
+2. Click on `Cluster` on the left side menu. For the cluster containing this workbench, click `Access Management`.
+3. Create a database user and grant appropriate permissions (e.g., `globaldesigner`). More details about managing database users can be found here: https://docs.tigergraph.com/cloud/security/manage-db-users. More details about access control settings can be found here:  https://docs.tigergraph.com/tigergraph-server/current/user-access/access-control-model#_built_in_roles.
 
 
 <img src="https://tigergraph-public-data.s3.us-west-1.amazonaws.com/images/create-user.png" width="700">
@@ -26,20 +26,23 @@ To access the graph database through pyTigerGraph, we need to create a database 
 
 ### Step 2. Update the database credentials in config.json
 
-- After creating the login credentials in Step 1, go back to the ML Workbench and edit `config.json` in the root jupyter notebook folder to replace the placeholder username and password with your new credentials. Example: [config.json](./config.json) 
+
+
+1. After creating the login credentials in Step 1, go back to the ML Workbench and edit `config.json` in the root jupyter notebook folder to replace the host, username and password with your new credentials. Example: [config.json](./config.json) 
 ```json
 {
-    "host": "https://test.i.tgcloud-dev.com",
+    "host": "https://mlwb.i.tgcloud.io",
     "username": "user_1",
     "password": "MyPassword1!",
     "getToken": true 
 }
 ```
 Note: For the `host` parameter, it is the domain name of the Cluster. You can find it in Cluster’s Details page which can be found by clicking on Clusters on tgCloud's left panel, then by clicking on the cluster’s name in the list (`Details -> Network Information -> Domain`).
+
 <img src="https://tigergraph-public-data.s3.us-west-1.amazonaws.com/images/tgcloud-host.png" width="700">
 
 
-- Once the credentials are updated, all the example notebooks and demos will refer to this config for database connections via pyTigerGraph. For example, here is how the [algos/centrality.ipynb](algos/centrality.ipynb)  notebook connects to the database:
+2. Once the credentials are updated, all the example notebooks and demos will refer to this config for database connections via pyTigerGraph. For example, here is how the [algos/centrality.ipynb](algos/centrality.ipynb)  notebook connects to the database:
 
 ```python
 from pyTigerGraph import TigerGraphConnection
