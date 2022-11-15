@@ -29,7 +29,7 @@ To access the graph database through pyTigerGraph, we need to create a database 
 - After creating the login credentials in Step 1, go back to the ML Workbench and edit `config.json` in the root jupyter notebook folder to replace the placeholder username and password with your new credentials. Example: [config.json](./config.json) 
 ```json
 {
-    "host": "https://test.i.tgcloud-dev.com",
+    "host": "https://mlwb.i.tgcloud.io",
     "username": "user_1",
     "password": "MyPassword1!",
     "getToken": true 
