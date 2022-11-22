@@ -1,6 +1,6 @@
 # TigerGraph ML Workbench: Graph ML as a Service
 
-TigerGraph’s Machine Learning Workbench is a Python-based toolkit that accelerates the development of graph-enhanced machine learning, which leverages the added insight from connected data and graph features for better predictions.
+TigerGraph’s Machine Learning Workbench is a Python-based toolkit that accelerates the development of graph-enhanced machine learning, which leverages the added insight from connected data and graph features for better predictions. The GitHub repository of the notebooks are found [here](https://github.com/tigergraph/graph-ml-notebooks).
 
 
 ## Set Up Your Workbench
@@ -49,8 +49,7 @@ from pyTigerGraph import TigerGraphConnection
 conn = TigerGraphConnection(
     host=config["host"],
     username=config["username"],
-    password=config["password"],
-    graphname="ldbc_snb"
+    password=config["password"]
 )
 ```
 
