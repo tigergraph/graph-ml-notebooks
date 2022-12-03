@@ -37,7 +37,7 @@ To access the graph database through pyTigerGraph, we need to create a database 
     "getToken": true 
 }
 ```
-Note: For the `host` parameter, it is the domain name of the Cluster. You can find it in Cluster’s Details page which can be found by clicking on Clusters on tgCloud's left panel, then by clicking on the cluster’s name in the list (`Details -> Network Information -> Domain`).
+Note: For the `host` parameter, it is the domain name of the Cluster. You can find it in Cluster’s Details page which can be found by clicking on Clusters on tgCloud's left panel, then by clicking on the cluster’s name in the list (`Details -> Network Information -> Domain`). Make sure to keep the “https://” at the beginning of the domain in the json config.
 
 <img src="https://tigergraph-public-data.s3.us-west-1.amazonaws.com/images/tgcloud-host.png" width="700">
 
