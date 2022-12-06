@@ -31,13 +31,13 @@ To access the graph database through pyTigerGraph, we need to create a database 
 1. After creating the login credentials in Step 1, go back to the ML Workbench and edit `config.json` in the root jupyter notebook folder to replace the host, username and password with your new credentials. Example: [config.json](./config.json) 
 ```json
 {
-    "host": "https://mlwb.i.tgcloud.io",
+    "host": "https://subdomain.i.tgcloud.io",
     "username": "user_1",
     "password": "MyPassword1!",
     "getToken": true 
 }
 ```
-Note: For the `host` parameter, it is the domain name of the Cluster. You can find it in Cluster’s Details page which can be found by clicking on Clusters on tgCloud's left panel, then by clicking on the cluster’s name in the list (`Details -> Network Information -> Domain`). Make sure to keep the “https://” at the beginning of the domain in the json config.
+Note: For the `host` parameter, it is the domain name of the Cluster. You can find it in Cluster’s Details page which can be found by clicking on Clusters on tgCloud's left panel, then by clicking on the cluster’s name in the list (`Details -> Network Information -> Domain`). Replace the substring `subdomain` with your actual subdomain. Make sure to keep the “https://” at the beginning of the domain in the json config.
 
 <img src="https://tigergraph-public-data.s3.us-west-1.amazonaws.com/images/tgcloud-host.png" width="700">
 
