@@ -3,4 +3,5 @@
     "username": "user_1",
     "password": "MyPassword1!",
     "getToken": true 
+    "job_id": "123"
 }
