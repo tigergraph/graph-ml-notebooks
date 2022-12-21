@@ -1,5 +1,5 @@
 {
-    "host": "https://test.i.tgcloud-dev.com",
+    "host": "https://subdomain.i.tgcloud.io",
     "username": "user_1",
     "password": "MyPassword1!",
     "getToken": true 
