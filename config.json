@@ -2,6 +2,6 @@
     "host": "https://subdomain.i.tgcloud.io",
     "username": "user_1",
     "password": "MyPassword1!",
-    "getToken": true 
+    "getToken": true,
     "job_id": "123"
 }
