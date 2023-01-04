@@ -1,7 +1,11 @@
 {
-    "host": "https://subdomain.i.tgcloud.io",
-    "username": "user_1",
-    "password": "MyPassword1!",
+    "host": "https://xxxxxx.i.tgcloud.io",
+    "username": "xxxxxx",
+    "password": "xxxxxxx",
+    "job_id": "xxxx"
+    "monitor_host": "https:/xxxxxx.i.tgcloud.io",
+    "monitor_username": "xxxxxxxxxx",
+    "monitor_password": "xxxxxxxxxxxx",
+    "monitor_graph": "xxxxxx",
     "getToken": true,
-    "job_id": "123"
 }
