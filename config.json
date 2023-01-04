@@ -2,10 +2,10 @@
     "host": "https://xxxxxx.i.tgcloud.io",
     "username": "xxxxxx",
     "password": "xxxxxxx",
-    "job_id": "xxxx"
+    "job_id": "xxxx",
     "monitor_host": "https:/xxxxxx.i.tgcloud.io",
     "monitor_username": "xxxxxxxxxx",
     "monitor_password": "xxxxxxxxxxxx",
     "monitor_graph": "xxxxxx",
-    "getToken": true,
+    "getToken": true
 }
