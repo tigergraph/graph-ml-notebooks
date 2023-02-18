@@ -79,6 +79,7 @@ We recommend starting with the tutorials in the `basics` folders if you are new 
 | basics | [pyTigergraph_101.ipynb](./basics/pyTigergraph_101.ipynb)  | Basic pyTigerGraph examples|
 | basics | [gsql_101.ipynb](./basics/gsql_101.ipynb)  | Basic GSQL 101 using pyTigerGraph |
 | basics | [gsql_102.ipynb](./basics/gsql_102.ipynb)  | Advanced GSQL 102 (pattern match) using pyTigerGraph |
+| basics | [template_query.ipynb](./basics/template_query.ipynb) | How to call template query with pyTigerGraph |
 
 ### 2. Graph Algorithms 
 
