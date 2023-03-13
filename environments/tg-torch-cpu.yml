@@ -9,6 +9,7 @@ dependencies:
   - conda
   - pip
   - matplotlib-base
+  - ipykernel=6.15.2
   - numpy
   - scipy
   - pandas
