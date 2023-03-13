@@ -15,7 +15,7 @@ dependencies:
   - pandas
   - pytorch
   - cpuonly
-  - pyg
+  - pyg=2.0.4
   - dgl
   - tqdm=4.64.1
   - matplotlib=3.5.3
