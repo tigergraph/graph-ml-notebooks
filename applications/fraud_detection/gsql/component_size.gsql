@@ -1,0 +1,9 @@
+CREATE QUERY component_size(STRING result_attr) FOR GRAPH Ethereum { 
+  MapAccum<INT, SumAccum<INT>> @@component_count;
+  
+  res = SELECT s FROM Account:s POST-ACCUM @@component_count += (s.wcc_id -> 1);
+  
+  res = SELECT s FROM Account:s POST-ACCUM 
+      INT tmp = @@component_count.get(s.wcc_id), 
+      s.setAttr(result_attr, tmp);
+}
