@@ -1,9 +1,18 @@
-# TigerGraph ML Workbench: Graph ML as a Service
+# Graph ML using pyTigerGraph
 
-TigerGraph’s Machine Learning Workbench is a Python-based toolkit that accelerates the development of graph-enhanced machine learning, which leverages the added insight from connected data and graph features for better predictions. The GitHub repository of the notebooks are found [here](https://github.com/tigergraph/graph-ml-notebooks).
+TigerGraph's pyTigerGraph library is a Python-based toolkit that accelerates the development of graph-enhanced machine learning, which leverages the added insight from connected data and graph features for better predictions. The GitHub repository of the notebooks are found [here](https://github.com/tigergraph/graph-ml-notebooks).
 
 
-## Set Up Your Workbench
+## Requirements
+
+You  need a TigerGraph database instance, [pyTigerGraph](https://docs.tigergraph.com/pytigergraph/current/intro/) and a Jupyter-compatible notebook to run .ipynb scripts. If you are using the ML Workbench, these are included.
+
+
+## Set Up Database Access
+
+The steps below describe how to set up database access from the ML Workbench to a TigerGraph Cloud instance. You can easily run these notebooks without the workbench and use a self-managed instance. You just need the IP address of our database, a database user with appropriate permissions, and password. Put this information in the config.json file as described below.
+
+1. The environment is set up assuming there is a configuration file called config.json that specifies 
 
 <!-- ### Step 0. Provisioning a DB cluster with ML workbench 
 
@@ -55,7 +64,7 @@ conn = TigerGraphConnection(
 
 ## Learn Graph ML from Example Notebooks
 
-The ML Workbench comes with a collection of canonical Python notebooks that will introduce you to a number of features of the TigerGraph ML ecosystem.
+This resource repository offers a collection of canonical Python notebooks that will introduce you to a number of features of the TigerGraph ML ecosystem.
 
 <!-- * In the `basics` directory, you can find notebooks of how to get started with pyTigerGraph.
 * In the `algos` directory, you can find notebooks for each category of algorithms within ourTigerGraph's [Graph Data Science Library](https://docs.tigergraph.com/graph-ml/current/intro/). You can run these algorithmss via the pyTigerGraph Featurizer functionality.
